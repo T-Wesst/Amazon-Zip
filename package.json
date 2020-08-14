@@ -1,0 +1,26 @@
+{
+  "name": "Math-Quiz",
+  "version": "1.0.0",
+  "description": "Math Quiz is an CLI application that quizzes the user on mathematics and stores the current users score in a leader board using NodeJS and mySQL!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Wesst/Math-Quiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-Wesst/Math-Quiz/issues"
+  },
+  "homepage": "https://github.com/T-Wesst/Math-Quiz#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "console.table": "^0.10.0",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  }
+}
