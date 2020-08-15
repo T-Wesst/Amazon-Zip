@@ -1,13 +1,7 @@
 [
-  { "Fortnite": "Video Games", "price": "39.99" },
-  { "Fallout": "Video Games", "price": "39.99" },
-  { "Yoga Mat": "Health & Fitness", "price": "59.99" },
-  { "Blood Glucose Monitor": "Health & Fitness", "price": "59.99" },
-  { "Medicine Ball": "Health & Fitness", "price": "29.99" },
-  { "Coconut Flour": "Grocery & Gourmet Foods", "price": "9.99" },
-  { "Chocolate Covered Almonds": "Grocery & Gourmet Foods", "price": "11.99" },
-  { "Isopure - Chocolate": "Health & Fitness", "price": "39.99" },
-  { "Silicon Sheet": "Home & Kitchen", "price": "29.99" },
-  { "Spiralizer": "Home & Kitchen", "price": "9.99" },
-  { "Charcoal Face Mask": "Beauty & Personal Care", "price": "4.99" }
+  { "Product Type": "Video Games", "Title": "Fornite", "price": "39.99" },
+  { "Product Type": "Video Games", "Title": "Fallout 3", "price": "29.99" },
+  { "Product Type": "Health & Fitness", "Title": "Yoga Mat", "price": "59.99" },
+  { "Product Type": "Health & Fitness","Title":"Blood Glucose Monitor", "price": "59.99" },
+  { "Product Type": "Health & Fitness","Title":"Medicine Ball", "price": "29.99" }
 ]
