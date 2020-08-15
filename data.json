@@ -1,7 +1,7 @@
 [
-  { "Product Type": "Video Games", "Title": "Fornite", "price": "39.99" },
-  { "Product Type": "Video Games", "Title": "Fallout 3", "price": "29.99" },
-  { "Product Type": "Health & Fitness", "Title": "Yoga Mat", "price": "59.99" },
-  { "Product Type": "Health & Fitness","Title":"Blood Glucose Monitor", "price": "59.99" },
-  { "Product Type": "Health & Fitness","Title":"Medicine Ball", "price": "29.99" }
+  { "Product Type": "Video Games", "Title": "Fortnite", "price": "39.99","Quantity": 10 },
+  { "Product Type": "Video Games", "Title": "Fallout 3", "price": "29.99","Quantity": 10 },
+  { "Product Type": "Health & Fitness", "Title": "Yoga Mat", "price": "59.99","Quantity": 10 },
+  { "Product Type": "Health & Fitness","Title":"Blood Glucose Monitor", "price": "59.99","Quantity": 10 },
+  { "Product Type": "Health & Fitness","Title":"Medicine Ball", "price": "29.99","Quantity": 10 }
 ]

@@ -8,7 +8,7 @@ module.exports = {
       {
         type: 'list',
         message: 'what would you like to do?',
-        choices: ['View my Cart', 'Place an Order', 'Exit'],
+        choices: ['View Products', 'View Cart', 'Exit'],
         name: 'choice',
       },
     ]).then(({ choice }) => {
@@ -16,11 +16,11 @@ module.exports = {
         case 'Exit':
           exit();
           break;
-        case 'View my Cart':
-          viewCart();
+        case 'View Products':
+          viewProducts();
           break;
-        case 'Place an Order':
-          placeOrder();
+        case 'View Cart':
+          viewCart();
           break;
       }
     });
@@ -31,11 +31,34 @@ function exit() {
   console.log('Thanks for stopping by, see you next time!');
 }
 
-function viewCart() {
+function viewProducts() {
   console.log('This is what is currently in your cart');
   console.table(data);
+  prompt([
+    {
+      type: 'list',
+      message: 'Which item would you like to purchase?',
+      name: 'choice',
+      choices: function () {
+        let choices = [];
+        data.forEach((item) => choices.push(item)); // returns undefined
+        return choices;
+      },
+    },
+    {
+      type: 'input',
+      message: 'How many would you like to purchase?',
+      name: 'quantity',
+      validate: function (value) {
+        if (isNaN(value)) {
+          return 'Please enter a valid number';
+        }
+        return true;
+      },
+    },
+  ]).then(({ quantity }) => console.log(`Processing ${quantity} transactions`));
 }
 
-function placeOrder() {
-  console.log('placing order');
+function viewCart() {
+  console.log('viewing cart');
 }
