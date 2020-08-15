@@ -15,19 +15,22 @@ colors.setTheme({
 prompt([
   {
     type: 'list',
-    message: 'What would you like to do?',
-    choices: ['multiplication', 'addition', 'subtraction', 'division'],
-    name: 'answer',
+    message: 'Please select your role',
+    choices: ['Customer'],
+    name: 'command',
   },
 ])
-  .then(({ answer }) => {
-    console.log(answer);
-    console.table([
-      { name: 'James P. Sullivan' },
-      { name: 'Mike Wazowski' },
-      { name: 'Randall Boggs' },
-    ]);
+  .then(({ command }) => {
+    start(command);
   })
   .catch((error) => {
     console.log(error);
   });
+
+function start(command) {
+  switch (command) {
+    case 'Customer':
+      console.log('hello customer');
+      break;
+  }
+}

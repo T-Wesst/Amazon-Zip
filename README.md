@@ -1,3 +1,3 @@
-# Math-Quiz
+# Amazon-Zip
 
-Math Quiz is an CLI application that quizzes the user on mathematics and stores the current users score in a leader board using NodeJS and mySQL!
+Amazon Zip is an Amazon-like store front that takes in orders from customers and depletes stock from the store's inventory using Node.js and mySQL
