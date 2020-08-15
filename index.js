@@ -1,4 +1,5 @@
 const { prompt } = require('inquirer');
+const { enterStore } = require('./app/Customer');
 const colors = require('colors');
 colors.setTheme({
   silly: 'rainbow',
@@ -19,18 +20,14 @@ prompt([
     choices: ['Customer'],
     name: 'command',
   },
-])
-  .then(({ command }) => {
-    start(command);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+]).then(({ command }) => {
+  start(command);
+});
 
 function start(command) {
   switch (command) {
     case 'Customer':
-      console.log('hello customer');
+      enterStore();
       break;
   }
 }
